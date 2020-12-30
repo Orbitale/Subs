@@ -1,0 +1,38 @@
+{
+    "name": "orbitale/subs",
+    "description": "A package to implement a simple subscription system in your project.",
+    "type": "library",
+    "require": {
+        "php": "^7.4|8.0",
+        "psr/log": "^1.1",
+        "doctrine/orm": "^2.8",
+        "symfony/security-core": "^5.0"
+    },
+    "require-dev": {
+        "symfony/validator": "^5.0",
+        "symfony/http-foundation": "^5.0",
+        "symfony/polyfill-php80": "^1.20",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orbitale\\Subs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Orbitale\\Subs\\": "tests/"
+        }
+    },
+    "suggest": {
+        "symfony/validator": "To use the UniqueSubscription constraint"
+    },
+    "license": "AGPL-3",
+    "authors": [
+        {
+            "name": "Alex Rock Ancelet",
+            "email": "pierstoval@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
